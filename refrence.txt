@@ -1,0 +1,75 @@
+axios.post(url,data,{ headers: { 'Content-Type': 'application/json' } });
+
+
+https://nokia-backend.herokuapp.com/api/v1/user/fetch-all
+
+
+https://nokia-backend.herokuapp.com/api/v1/
+
+
+##react notes
+react uses uni direction work flow
+
+setstate can be used to manipulate the data or the
+input which can be given inside this.state
+
+callback can be used to update the state syncornosly cuz the data will be late 
+when used setstate
+
+best practise for updating a state is to use function instead of object
+eg
+
+handleclick = () =>{
+    this.setstate((prevState,prevProps)=>{
+        return{obj:prevState.obj = ''}
+    },
+    (callback) =>console.log(this.state.obj)
+    })
+}
+
+runing a function inside setstate can callback the running function
+
+props can be passed when the tag of the component being used somewhere else
+for eg
+<App tittle={hii}/>
+this is props
+
+ternary opertor in react
+
+{this.state.obj ?
+    'hii i will be shown if the obj is true or the condiotion is crct
+    :
+    'this will be show if the obj is false or not crct'    
+}
+
+to get refernce about lifecycle meathods go to lifecycle.js
+
+## git commands
+
+git clone
+git remote remove origin
+git remote add origin add gitlink
+git add .
+git commit -m "intial commit"
+git push origin master
+
+
+npm update -d : updateing dependencies
+npm audit fix
+npm install
+
+routing - library for react : yarn add react-router-dom
+withRouter - for routing to children
+
+
+
+
+
+
+
+
+
+
+
+
+
