@@ -62,7 +62,25 @@ routing - library for react : yarn add react-router-dom
 withRouter - for routing to children
 
 
+##deploying with GH pages
+create a repo on github
+git init
+git remote add origin add repo link
+yarn add gh-pages
 
+add homepage link in package.json
+eg:"https://Mithun-joe.github.io/react-monsters"
+
+add two scripts
+"predeploy": "yarn build",
+"deploy": "gh-pages -d build"
+
+yarn deploy : will give files for deploy build
+git add .
+git commit -m "intial commit"
+git push origin master
+go to git hub and see wther build files are updated and go to setting and check github pages
+branch is set to ghpages and now you have deployed the static application
 
 
 
