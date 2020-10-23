@@ -5,8 +5,8 @@ import CustomButton from "../custom-button/custom-button";
 import {signInWithGoogle} from '../../firebase/firebase.utils'
 
 class SignIn extends React.Component{
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state ={
             email:'',
@@ -52,7 +52,7 @@ class SignIn extends React.Component{
                             <CustomButton type='submit'> Sign In</CustomButton>
                             <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
                                 {''}
-                                Sign In With Google{''}
+                                Sign In With{''}
                             </CustomButton>
                         </div>
                 </form>
