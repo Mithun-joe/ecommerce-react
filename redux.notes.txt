@@ -1,0 +1,18 @@
+
+###Redux notes
+Redux is used for state management it makes state management easier
+#redux concepts
+#why redux
+* good for manageing large state
+* userfull for sharing data between components
+* predictable state management useing the 3 principals
+
+## 3 Principals
+1 single source of truth
+   2 state is read only
+       3 change is pure functions
+
+action => root reducer => store => DOM changes
+
+## PROP DRILLING
+
